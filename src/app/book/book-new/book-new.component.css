@@ -1,0 +1,49 @@
+label {
+  display: block;
+  margin: .25em 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin: .25em 0;
+  padding: .5em .6em;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 3px #ddd;
+  border-radius: 4px;
+  vertical-align: middle;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #0078e7;
+  color: #fff;
+
+  font-family: inherit;
+  font-size: 100%;
+  padding: .5em 1em;
+  border: 1px solid #999;
+  border: 0 rgba(0,0,0,0);
+  text-decoration: none;
+  border-radius: 2px;
+}
+
+button:disabled {
+  background-color: #6aabe6;
+  cursor: not-allowed;
+}
+
+/* Validation */
+
+input.ng-valid, 
+textarea.ng-valid {
+  border-right: 5px solid green;
+}
+
+input.ng-invalid.ng-touched, 
+textarea.ng-invalid.ng-touched {
+  border-right: 5px solid red;
+}

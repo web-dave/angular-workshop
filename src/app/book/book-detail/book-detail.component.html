@@ -1,0 +1,22 @@
+<div *ngIf="book">
+  <h3>{{book.title}} by {{book.author}}</h3>
+  <h4>{{book.subtitle}}</h4>
+
+  <p>{{book.abstract}}</p>
+
+  <p>
+    <small>
+      ISBN: {{book.isbn}}
+    </small>
+  </p>
+
+  <p>
+    <a routerLink="edit">✏️ Edit</a>
+  </p>
+</div>
+<div *ngIf="!book">
+  Loading…
+</div>
+
+
+<a routerLink="/books">◀ Back to list</a> 

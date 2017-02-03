@@ -1,0 +1,14 @@
+<h2>A Book List</h2>
+
+<a routerLink="new">➕ Create a new book</a>
+
+<ul>
+  <li *ngFor="let book of books">
+    <h3>
+      <a [routerLink]="['/books', book.isbn]">
+        {{book.title}} <small>{{book.subtitle}}</small>
+      </a>
+    </h3>
+    <p>ISBN: <code>{{book.isbn}}</code></p>
+  </li>
+</ul>
